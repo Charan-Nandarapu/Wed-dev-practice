@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AJAX XMLHttpRequest Example</title>
+    </head>
+    <body>
+        <h2>Retrieve data from txt file</h2>
+        <p id="data"></p>
+        <button onclick="loadDoc()">Load Data</button>
+        <script>
+            function loadDoc(){
+                var req=new XMLHttpRequest()
+                req.onreadystatechange=function(){
+                    if(req.readyState==4 && req.status==200){
+                        document.getElementById("data").innerHTML = req.responseText;
+                }
+            };
+            req.open("GET","rec.txt",true);
+
+            req.send()
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+<h1>Krithika B</h1>
+<hr />
+<b>School of Computing</b> <br />
+<i>Department of Computational Intelligence</i>
+<br />
+<i>University Building, SRMIST </i>
+<br />
+<i>Chennai </i>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="view port" content="width=device_width">
+        <title>JS Events</title>
+        <style>
+            #hoverDiv{
+                width: 100px;
+                height: 100px;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="clickbutton">Click me</button>
+        <div id="hover id"></div>
+        <p id="mouseleads">Mouse coorrdinates:</p>
+        <p id="mouse click">Mouse click:</p>
+        <input id="key input" type="text">
+
+        <script>
+            document.getElementById("clickbutton").addEventListener("click",funct(){
+                alert("Button clicked");
+            });
+
+            hoverDiv.addEventListener("mouseover",fun(){
+                this.style.background-color="blue";
+            })
+        </script>
